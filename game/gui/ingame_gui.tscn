@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/fonts/dpsp_beyond.tres" type="DynamicFont" id=1]
+[ext_resource path="res://game/gui/scripts/ingame_gui.gd" type="Script" id=2]
+[ext_resource path="res://assets/icons/icon-target.svg" type="Texture" id=3]
+[ext_resource path="res://assets/icons/icon-bullet.svg" type="Texture" id=4]
+
+[node name="ingame_gui" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="icon_bullet" type="Sprite" parent="."]
+position = Vector2( 82, 74.755 )
+texture = ExtResource( 4 )
+
+[node name="ammo_count" type="Label" parent="."]
+margin_left = 159.877
+margin_top = 38.7812
+margin_right = 726.877
+margin_bottom = 134.781
+custom_fonts/font = ExtResource( 1 )
+text = "1234"
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icon_target" type="Sprite" parent="."]
+position = Vector2( 82, 201 )
+texture = ExtResource( 3 )
+
+[node name="target_count" type="Label" parent="."]
+margin_left = 159.877
+margin_top = 162.94
+margin_right = 726.877
+margin_bottom = 258.94
+custom_fonts/font = ExtResource( 1 )
+text = "1234"
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

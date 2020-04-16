@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Patent_Doll.ogg-f43e791111b2d89a65a4b2390d3e28f1.oggstr"
+
+[deps]
+
+source_file="res://assets/musics/Patent_Doll.ogg"
+dest_files=[ "res://.import/Patent_Doll.ogg-f43e791111b2d89a65a4b2390d3e28f1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

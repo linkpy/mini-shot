@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mind_And_Eye_Journey.ogg-e8ac0138bd454c8a42af55312ac609ba.oggstr"
+
+[deps]
+
+source_file="res://assets/musics/Mind_And_Eye_Journey.ogg"
+dest_files=[ "res://.import/Mind_And_Eye_Journey.ogg-e8ac0138bd454c8a42af55312ac609ba.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

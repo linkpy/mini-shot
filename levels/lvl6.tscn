@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://game/level/level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/objects/shooting-target.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/objects/target.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/lvl7.tscn" type="PackedScene" id=4]
+
+[node name="level" instance=ExtResource( 1 )]
+next_level = ExtResource( 4 )
+
+[node name="player_aim" parent="." index="1"]
+position = Vector2( 2895.44, 1607.84 )
+limit_left = 0
+limit_top = 0
+limit_right = 5760
+limit_bottom = 3240
+
+[node name="target5" parent="." index="2" instance=ExtResource( 3 )]
+position = Vector2( 794.173, 2447.12 )
+
+[node name="target7" parent="." index="3" instance=ExtResource( 3 )]
+position = Vector2( 2795.23, 1607.84 )
+
+[node name="target10" parent="." index="4" instance=ExtResource( 3 )]
+position = Vector2( 2896.44, 1703.13 )
+
+[node name="target8" parent="." index="5" instance=ExtResource( 3 )]
+position = Vector2( 2993.57, 1607.84 )
+
+[node name="target9" parent="." index="6" instance=ExtResource( 3 )]
+position = Vector2( 2896.44, 1513.66 )
+
+[node name="target6" parent="." index="7" instance=ExtResource( 3 )]
+position = Vector2( 4956.61, 2447.12 )
+
+[node name="shooting-target7" parent="." index="8" instance=ExtResource( 2 )]
+position = Vector2( 2896.44, 799.151 )
+rotation = -10.9956
+
+[node name="shooting-target10" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( 2526.57, 1607.84 )
+rotation = -12.5664
+
+[node name="shooting-target11" parent="." index="10" instance=ExtResource( 2 )]
+position = Vector2( 3235.49, 1607.84 )
+rotation = -9.42476
+
+[node name="shooting-target12" parent="." index="11" instance=ExtResource( 2 )]
+position = Vector2( 2895.44, 1279.06 )
+rotation = -10.9956
+
+[node name="shooting-target13" parent="." index="12" instance=ExtResource( 2 )]
+position = Vector2( 2895.44, 1916.07 )
+rotation = -7.85397
+
+[node name="shooting-target8" parent="." index="13" instance=ExtResource( 2 )]
+position = Vector2( 2842.36, 2439.44 )
+rotation = -9.42476
+
+[node name="shooting-target9" parent="." index="14" instance=ExtResource( 2 )]
+position = Vector2( 2951.09, 2439.44 )
+rotation = -12.5664
+
+[node name="shooting-target14" parent="." index="15" instance=ExtResource( 2 )]
+position = Vector2( 5182.05, 2439.44 )
+rotation = -14.1371
+
+[node name="shooting-target15" parent="." index="16" instance=ExtResource( 2 )]
+position = Vector2( 5188.39, 1607.84 )
+rotation = -15.7079

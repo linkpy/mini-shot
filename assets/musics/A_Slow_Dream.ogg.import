@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/A_Slow_Dream.ogg-02c81589dbf91c0ae7a6dfaba61b6638.oggstr"
+
+[deps]
+
+source_file="res://assets/musics/A_Slow_Dream.ogg"
+dest_files=[ "res://.import/A_Slow_Dream.ogg-02c81589dbf91c0ae7a6dfaba61b6638.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

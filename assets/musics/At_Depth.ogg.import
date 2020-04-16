@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/At_Depth.ogg-d2839cc04263c462b76a952f7383788c.oggstr"
+
+[deps]
+
+source_file="res://assets/musics/At_Depth.ogg"
+dest_files=[ "res://.import/At_Depth.ogg-d2839cc04263c462b76a952f7383788c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

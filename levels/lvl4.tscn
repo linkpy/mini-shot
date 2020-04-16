@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://game/objects/target.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/level/level.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/objects/shooting-target.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/lvl5.tscn" type="PackedScene" id=4]
+
+[node name="level" instance=ExtResource( 2 )]
+next_level = ExtResource( 4 )
+
+[node name="player_aim" parent="." index="1"]
+position = Vector2( 960, 540 )
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
+
+[node name="shooting-target" parent="." index="2" instance=ExtResource( 3 )]
+position = Vector2( 960.835, 539.733 )
+rotation = 3.14159
+
+[node name="shooting-target2" parent="." index="3" instance=ExtResource( 3 )]
+position = Vector2( 185.571, 538.375 )
+rotation = -4.71238
+
+[node name="shooting-target3" parent="." index="4" instance=ExtResource( 3 )]
+position = Vector2( 190.84, 914.212 )
+
+[node name="shooting-target4" parent="." index="5" instance=ExtResource( 3 )]
+position = Vector2( 1733.16, 916.862 )
+rotation = -1.57079
+
+[node name="target" parent="." index="6" instance=ExtResource( 1 )]
+position = Vector2( 1738.31, 172.057 )
