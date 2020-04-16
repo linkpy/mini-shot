@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://menus/components/menu_aim.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/icons/icon-logo.svg" type="Texture" id=2]
+[ext_resource path="res://game/player/player_camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://menus/components/menu_target.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/icons/icon-play.svg" type="Texture" id=5]
+[ext_resource path="res://assets/icons/icon-exit.svg" type="Texture" id=6]
+[ext_resource path="res://assets/icons/icon-settings.svg" type="Texture" id=7]
+[ext_resource path="res://menus/scripts/main-menu.gd" type="Script" id=8]
+
+[node name="main-menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icon" type="TextureRect" parent="."]
+anchor_right = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_camera" parent="." instance=ExtResource( 3 )]
+position = Vector2( 960, 540 )
+position_offset = Vector2( 960, 540 )
+
+[node name="background" parent="player_camera" index="0"]
+visible = false
+
+[node name="menu_aim" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1107.33, 750.979 )
+camera_path = NodePath("../player_camera")
+
+[node name="icon_target" parent="." instance=ExtResource( 4 )]
+position = Vector2( 177.355, 192.173 )
+respawnable = false
+
+[node name="play" parent="." groups=[
+"respawnable",
+] instance=ExtResource( 4 )]
+position = Vector2( 960, 720 )
+
+[node name="sprite" parent="play" index="0"]
+texture = ExtResource( 5 )
+
+[node name="exit" parent="." groups=[
+"respawnable",
+] instance=ExtResource( 4 )]
+position = Vector2( 1746.14, 910.854 )
+
+[node name="sprite" parent="exit" index="0"]
+texture = ExtResource( 6 )
+
+[node name="settings" parent="." groups=[
+"respawnable",
+] instance=ExtResource( 4 )]
+position = Vector2( 160.521, 910.854 )
+
+[node name="sprite" parent="settings" index="0"]
+texture = ExtResource( 7 )
+[connection signal="destroyed" from="play" to="." method="_on_play_destroyed"]
+[connection signal="destroyed" from="exit" to="." method="_on_exit_destroyed"]
+[connection signal="destroyed" from="settings" to="." method="_on_settings_destroyed"]
+
+[editable path="player_camera"]
+
+[editable path="play"]
+
+[editable path="exit"]
+
+[editable path="settings"]

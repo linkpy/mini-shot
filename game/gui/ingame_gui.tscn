@@ -34,6 +34,7 @@ __meta__ = {
 
 [node name="icon_target" type="Sprite" parent="."]
 position = Vector2( 82, 201 )
+scale = Vector2( 0.33, 0.33 )
 texture = ExtResource( 3 )
 
 [node name="target_count" type="Label" parent="."]

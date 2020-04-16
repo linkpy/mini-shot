@@ -1,12 +1,13 @@
 extends Camera2D
 
 
+export var position_offset := Vector2.ZERO
 export var shaking := 0.0
 
 
 
 func _process(_dt: float):
-	position = Vector2(shaking, 0).rotated(rand_range(0, 2*PI))
+	position = position_offset + Vector2(shaking, 0).rotated(rand_range(0, 2*PI))
 	
 	var vs = get_viewport_rect().size
 	$background.region_rect = Rect2(

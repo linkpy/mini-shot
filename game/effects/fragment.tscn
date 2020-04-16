@@ -49,6 +49,7 @@ script = ExtResource( 1 )
 velocity_factor = 0.0
 
 [node name="poly" type="Polygon2D" parent="."]
+antialiased = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
 autoplay = "anim"

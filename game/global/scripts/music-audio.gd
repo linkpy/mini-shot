@@ -13,6 +13,7 @@ const Musics = [
 
 
 func _ready():
+	randomize()
 	_on_player_finished()
 
 func _on_player_finished():

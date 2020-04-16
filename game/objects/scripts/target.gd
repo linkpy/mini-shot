@@ -1,9 +1,13 @@
 extends Area2D
 
 
-
 signal destroyed()
 
+
+
+
+func _ready():
+	$shape.shape.radius = $sprite.texture.get_size().x/2
 
 
 func shot(p):
